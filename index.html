@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js" defer></script>
+    <script src="tic-tac-toe-logic.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Web Tic Tac Toe Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Play Tic, Tac, Toe</h1>
+      <p>built with HTML, CSS, JavaScript and -of course - lots of love!</p>
+    </header>
+    <main>
+      <aside id="edit-window-overlay">
+        <h2>Choose your name</h2>
+        <form class="inline-control">
+          <label for="player-name-input" id="player-name-input-label"
+            >player name</label
+          >
+          <input type="text" name="player-name-input" id="player-name-input" />
+        </form>
+        <p id="warning-text"></p>
+        <div class="button-container">
+          <button id="cancel-button">Cancel</button>
+          <button id="confirm-button">Confirm</button>
+        </div>
+      </aside>
+      <section id="player-setting">
+        <div>
+          <h3>Player 1</h3>
+          <p id="player-1-name" class="player-name">PLAYER NAME</p>
+          <span class="mark">X</span>
+          <button class="edit-button">Edit</button>
+        </div>
+        <div id="player-2">
+          <h3>Player 2</h3>
+          <p id="player-2-name" class="player-name">PLAYER NAME</p>
+          <span class="mark">O</span>
+          <button class="edit-button">Edit</button>
+        </div>
+      </section>
+      <button id="game-start-button">Start New Game</button>
+      <section id="tic-tac-toe">
+        <div id="game-over">
+          <h3 id="game-over-message">You won,</h3>
+          <p>Click "Start New Game" above, to start a new game!</p>
+        </div>
+        <p>It's your turn <span id="turn-message"></span>!</p>
+        <ol id="board">
+          <button class="item"></button>
+          <button class="item"></button>
+          <button class="item"></button>
+          <button class="item"></button>
+          <button class="item"></button>
+          <button class="item"></button>
+          <button class="item"></button>
+          <button class="item"></button>
+          <button class="item"></button>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
